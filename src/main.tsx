@@ -14,9 +14,14 @@ const theme = createTheme({
   } as PaletteOptions,
 
   typography: {
+    fontFamily: 'Poppins',
     h1: {
+      fontFamily: 'Acme',
       fontSize: '6rem',
-      fontWeight: 600,
+    },
+    h2: {
+      fontFamily: 'Acme',
+      fontSize: '3rem',
     },
   },
 });

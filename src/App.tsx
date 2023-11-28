@@ -6,8 +6,9 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import VideoPage from './pages/VideoPage/VideoPage';
 import JuiceDetailPage from './pages/JuiceDetailPage/JuiceDetailPage';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import Navbar from './components/Navar/Navbar';
+import { grey } from '@mui/material/colors';
 
 function App() {
   return (
@@ -23,6 +24,19 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </Router>
+      <Typography
+        variant='body1'
+        sx={{
+          position: 'absolute',
+          bottom: '1.2rem',
+          fontStyle: 'italic',
+          left: '1.2rem',
+          letterSpacing: '3px',
+          color: grey[800],
+        }}
+      >
+        v1.0.1
+      </Typography>
     </Container>
   );
 }

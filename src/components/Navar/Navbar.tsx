@@ -18,6 +18,10 @@ import movitaLogo from '../../assets/logos/movitaLogoBig.png';
 import { getNavLinksColor, getNavLinksWeight } from './helpers';
 
 export default function DrawerAppBar() {
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
+
   const links: ILink[] = [
     {
       label: 'HOME',
@@ -49,7 +53,7 @@ export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const drawer = (
-    <Box onClick={(prev) => setMobileOpen(!prev)} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Avatar role='img' src={movitaLogo} sx={{ margin: '1rem auto' }} />
       <Divider />
       <List>
@@ -71,9 +75,13 @@ export default function DrawerAppBar() {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
+        position='static'
         component='nav'
         sx={{
           display: 'flex',
+          padding: '1rem 0',
+          background: 'transparent',
+          boxShadow: 'none',
         }}
       >
         <Toolbar
@@ -83,14 +91,15 @@ export default function DrawerAppBar() {
           }}
         >
           <IconButton
+            size='medium'
             aria-label='open drawer'
             edge='start'
-            onClick={(prev) => setMobileOpen(!prev)}
+            onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
-          <Avatar role='img' src={movitaLogo} />
+          <Avatar role='img' src={movitaLogo} onClick={() => navigate('/')} />
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {links.map((item) => (
               <Button
@@ -108,7 +117,7 @@ export default function DrawerAppBar() {
         <Drawer
           variant='temporary'
           open={mobileOpen}
-          onClose={(prev) => setMobileOpen(!prev)}
+          onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true,
           }}
@@ -123,9 +132,6 @@ export default function DrawerAppBar() {
           {drawer}
         </Drawer>
       </nav>
-      <Box component='main' sx={{ p: 3 }}>
-        <Toolbar />
-      </Box>
     </Box>
   );
 }
