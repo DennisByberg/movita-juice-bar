@@ -13,11 +13,13 @@ import { grey } from '@mui/material/colors';
 function App() {
   const typographySX = {
     position: 'absolute',
-    bottom: '1.2rem',
+    fontSize: '13px',
+    bottom: '0.2rem',
     fontStyle: 'italic',
-    left: '1.2rem',
-    letterSpacing: '3px',
-    color: grey[800],
+    left: '0.4rem',
+    letterSpacing: '2px',
+    color: grey[700],
+    userSelect: 'none',
   };
 
   return (

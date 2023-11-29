@@ -18,6 +18,9 @@ function HomePage() {
           gap: '1rem',
           flexDirection: 'column',
           alignItems: 'center',
+          '@media (max-height: 1000px)': {
+            maxWidth: '250px',
+          },
         }}
       >
         <Typography variant='h1'>Movita</Typography>
