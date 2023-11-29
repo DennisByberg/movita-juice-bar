@@ -11,6 +11,15 @@ import Navbar from './components/Navar/Navbar';
 import { grey } from '@mui/material/colors';
 
 function App() {
+  const typographySX = {
+    position: 'absolute',
+    bottom: '1.2rem',
+    fontStyle: 'italic',
+    left: '1.2rem',
+    letterSpacing: '3px',
+    color: grey[800],
+  };
+
   return (
     <Container sx={{ minHeight: '100vh' }}>
       <Router>
@@ -24,18 +33,8 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </Router>
-      <Typography
-        variant='body1'
-        sx={{
-          position: 'absolute',
-          bottom: '1.2rem',
-          fontStyle: 'italic',
-          left: '1.2rem',
-          letterSpacing: '3px',
-          color: grey[800],
-        }}
-      >
-        v1.0.1
+      <Typography variant='body1' sx={typographySX}>
+        v1.0.2
       </Typography>
     </Container>
   );
