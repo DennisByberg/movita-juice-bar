@@ -1,4 +1,12 @@
+import { Box } from '@mui/material';
+import JuiceList from '../../components/JuiceList/JuiceList';
+
 function JuicesPage() {
-  return <div>JuicesPage</div>;
+  return (
+    <Box>
+      <JuiceList />
+    </Box>
+  );
 }
+
 export default JuicesPage;
