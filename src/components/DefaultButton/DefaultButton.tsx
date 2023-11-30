@@ -1,6 +1,6 @@
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 interface DefaultButtonProps {
   variant: 'text' | 'contained' | 'outlined';

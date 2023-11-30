@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import googleMapsPNG from '/images/googleMapsPNG.png';
-// import juicePNG from '/images/juicePNG.png';
 
 function ContactPage() {
   return (

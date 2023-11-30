@@ -1,8 +1,8 @@
+import { PaletteOptions, ThemeProvider, createTheme } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
-import { PaletteOptions, ThemeProvider, createTheme } from '@mui/material';
-import { grey } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {

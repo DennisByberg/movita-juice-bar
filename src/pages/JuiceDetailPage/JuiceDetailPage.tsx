@@ -1,6 +1,6 @@
+import { Box, Typography } from '@mui/material';
 import { useLocation } from 'react-router-dom';
 import juices from '../../juicesData.json';
-import { Box, Typography } from '@mui/material';
 
 function JuiceDetailPage() {
   const drinkLinkName = useLocation().pathname.split('/').pop();

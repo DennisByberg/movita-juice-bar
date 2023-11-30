@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import './VideoPage.scss';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
+import './VideoPage.scss';
 
 function VideoPage() {
   return (

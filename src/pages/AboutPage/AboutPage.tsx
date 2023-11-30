@@ -1,9 +1,9 @@
-import { Box, List, ListItem, SxProps, Typography } from '@mui/material';
-import DefaultButton from '../../components/DefaultButton/DefaultButton';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
-import WavingHandIcon from '@mui/icons-material/WavingHand';
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
+import { Box, List, ListItem, SxProps, Typography } from '@mui/material';
+import DefaultButton from '../../components/DefaultButton/DefaultButton';
 
 function AboutPage() {
   const listItemSX: SxProps = {

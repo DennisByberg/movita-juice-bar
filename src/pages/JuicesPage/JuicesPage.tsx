@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import JuiceList from '../../components/JuiceList/JuiceList';
 
 function JuicesPage() {

@@ -1,13 +1,13 @@
 import {
+  Box,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Box,
 } from '@mui/material';
-import DefaultButton from '../DefaultButton/DefaultButton';
-import juicesDatabase from '../../juicesData.json';
 import { grey } from '@mui/material/colors';
+import juicesDatabase from '../../juicesData.json';
+import DefaultButton from '../DefaultButton/DefaultButton';
 
 function JuiceList() {
   const juices = juicesDatabase;
