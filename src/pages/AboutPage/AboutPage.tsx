@@ -6,7 +6,6 @@ function AboutPage() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
-
     '@media (max-width: 500px)': {
       alignItems: 'center',
       textAlign: 'center',

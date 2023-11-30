@@ -100,7 +100,11 @@ export default function DrawerAppBar() {
             <MenuIcon />
           </IconButton>
           <Avatar role='img' src={movitaLogo} onClick={() => navigate('/')} />
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box
+            sx={{
+              display: { xs: 'none', sm: 'block' },
+            }}
+          >
             {links.map((item) => (
               <Button
                 onClick={() => navigate(item.href)}

@@ -9,6 +9,7 @@ import JuiceDetailPage from './pages/JuiceDetailPage/JuiceDetailPage';
 import { Container, Typography } from '@mui/material';
 import Navbar from './components/Navar/Navbar';
 import { grey } from '@mui/material/colors';
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 
 function App() {
   const typographySX = {
@@ -26,6 +27,7 @@ function App() {
     <Container sx={{ minHeight: '100vh' }}>
       <Router>
         <Navbar />
+        <Breadcrumbs />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/juices' element={<JuicesPage />} />

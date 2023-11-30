@@ -103,7 +103,19 @@ function ContactForm() {
         rows={5}
       />
 
-      <Button disabled={isSubmitting} type='submit' variant='contained'>
+      <Button
+        sx={{
+          width: '10rem',
+          color: 'movitaPurple.light',
+          borderColor: 'movitaPurple.dark',
+          '@media (max-width: 500px)': {
+            margin: 'auto',
+          },
+        }}
+        disabled={isSubmitting}
+        type='submit'
+        variant='outlined'
+      >
         {isSubmitting ? 'SUBMITTING' : 'SUBMIT'}
       </Button>
       <Toaster position='top-center' />

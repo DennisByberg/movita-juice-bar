@@ -23,10 +23,17 @@ function HomePage() {
           },
         }}
       >
-        <Typography sx={{ color: 'movitaPurple.light' }} variant='h1'>
-          Movita
+        <Typography
+          sx={{
+            padding: '1rem 2rem',
+            color: 'movitaGreen.light',
+          }}
+          variant='h1'
+        >
+          mo
+          <span style={{ color: '#deb3ff' }}>vita</span>
         </Typography>
-        <Typography sx={{ color: 'movitaGreen.light' }} variant='h2'>
+        <Typography sx={{ color: 'linkColor.notActive' }} variant='h2'>
           - Juice Bar -
         </Typography>
         <Box

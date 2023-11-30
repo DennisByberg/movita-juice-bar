@@ -1,0 +1,30 @@
+.breadcrumbs {
+  background-color: rgba(150, 105, 140, 0.13);
+  padding: 0.5rem 1rem;
+  margin-inline: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+.breadcrumbs .crumb a {
+  color: #deb3ff;
+  text-decoration: underline;
+
+  &:hover {
+    color: #bc64ff;
+  }
+}
