@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 1rem;
+
+  input,
+  textarea {
+    &::placeholder {
+      color: rgba(128, 128, 128, 0.5);
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+
+      &.success {
+        background-color: rgb(167, 255, 167);
+      }
+    }
+
+    span {
+      color: rgb(255, 79, 79);
+      margin-top: 0.4rem;
+      display: flex;
+      gap: 0.3rem;
+      align-items: center;
+      font-size: 14px;
+    }
+  }
+}
