@@ -124,10 +124,11 @@ function ContactForm() {
           display: 'flex',
           gap: '0.3rem',
           width: '10rem',
+          margin: '3rem 0',
           color: 'movitaPurple.light',
           borderColor: 'movitaPurple.dark',
           '@media (max-width: 500px)': {
-            margin: 'auto',
+            margin: '3rem auto',
           },
         }}
         disabled={isSubmitting}

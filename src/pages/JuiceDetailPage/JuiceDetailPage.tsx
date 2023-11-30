@@ -24,6 +24,7 @@ function JuiceDetailPage() {
           maxWidth: '250px',
         }}
         component='img'
+        alt={drink?.alt_text}
         src={drink?.image}
       />
       <Box

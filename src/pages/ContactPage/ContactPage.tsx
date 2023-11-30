@@ -14,6 +14,7 @@ function ContactPage() {
           borderRadius: 3,
         }}
         component='img'
+        alt='a google maps overview over downtown where movita juice bar is located'
         src={googleMapsPNG}
       />
       <ContactForm />

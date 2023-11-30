@@ -2,8 +2,8 @@ import {
   List,
   ListItem,
   ListItemAvatar,
-  Avatar,
   ListItemText,
+  Box,
 } from '@mui/material';
 import DefaultButton from '../DefaultButton/DefaultButton';
 import juicesDatabase from '../../juicesData.json';
@@ -40,7 +40,12 @@ function JuiceList() {
       {juices.map((juice) => (
         <ListItem key={juice.id} sx={listItemSX}>
           <ListItemAvatar>
-            <Avatar role='img' src={juice.image} />
+            <Box
+              component='img'
+              sx={{ width: '2.5rem' }}
+              src={juice.image}
+              alt={juice.alt_text}
+            />
           </ListItemAvatar>
           <ListItemText
             sx={listItemTextSX}
@@ -49,7 +54,7 @@ function JuiceList() {
           />
           <DefaultButton
             navigationURL={`${juice.link_name}`}
-            buttonText={`Read More About ${juice.name}`}
+            buttonText={`More About ${juice.name}`}
             variant='outlined'
           />
         </ListItem>

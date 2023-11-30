@@ -1,5 +1,4 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { Avatar } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -14,8 +13,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import movitaLogo from '/logos/movitaLogoBig.png';
 import { getNavLinksColor, getNavLinksWeight } from './helpers';
+import movitaLogo from '/logos/movitaLogoBig.png';
 
 export default function DrawerAppBar() {
   const handleDrawerToggle = () => {
@@ -54,13 +53,17 @@ export default function DrawerAppBar() {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Avatar
-        role='img'
-        src={movitaLogo}
+      <Box
         sx={{
           margin: '1rem auto',
           cursor: 'pointer',
+          width: '2.5rem',
+          borderRadius: 100,
         }}
+        component='img'
+        src={movitaLogo}
+        alt='round, green and purple movita juice bar logo'
+        onClick={() => navigate('/')}
       />
       <Divider />
       <List>
@@ -106,12 +109,15 @@ export default function DrawerAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Avatar
-            role='img'
+          <Box
             sx={{
               cursor: 'pointer',
+              width: '2.5rem',
+              borderRadius: 100,
             }}
+            component='img'
             src={movitaLogo}
+            alt='round, green and purple movita juice bar logo'
             onClick={() => navigate('/')}
           />
           <Box
