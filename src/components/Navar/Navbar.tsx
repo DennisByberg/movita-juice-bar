@@ -14,7 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import movitaLogo from '../../../public/logos/movitaLogoBig.png';
+import movitaLogo from '/logos/movitaLogoBig.png';
 import { getNavLinksColor, getNavLinksWeight } from './helpers';
 
 export default function DrawerAppBar() {

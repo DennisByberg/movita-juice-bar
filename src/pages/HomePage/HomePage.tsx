@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import juicePNG from '../../../public/images/juicePNG.png';
+import juicePNG from '/images/juicePNG.png';
 
 function HomePage() {
   return (
