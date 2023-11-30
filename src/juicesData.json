@@ -6,7 +6,7 @@
     "alt_text": "Orange Drink",
     "description": "Introducing \"Orange Supreme\" – an exquisite classic orange juice beverage crafted to elevate your refreshment experience. Immerse your senses in the unparalleled richness of this citrus elixir, meticulously blended to perfection. Savor the essence of sun-kissed oranges in every sip, as the vibrant flavor profile of Orange Supreme transports you to a world of pure, unadulterated indulgence. Unleash the power of nature's goodness with this timeless and refreshing masterpiece – Orange Supreme, where every drop is a celebration of citrus perfection.",
     "small_description": "A timeless classic of pure, sun-kissed orange bliss.",
-    "image": "/src/assets/images/orangeSupreme.png"
+    "image": "/public/images/orangeSupreme.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "alt_text": "Hawaiian Juice",
     "description": "Embark on a tropical journey with our enchanting creation, the \"Hawaiian Special\" – a unique and exotic juice drink inspired by the lush landscapes of Hawaii. Immerse yourself in the vibrant fusion of tropical flavors, as pineapple, coconut, and a hint of passion fruit dance harmoniously on your palate. Every sip is a blissful escape to the sun-drenched beaches and refreshing breezes of the Hawaiian islands. Let the irresistible taste of the tropics take you on a vacation of the senses with our Hawaiian Special, where every drop is a sip of paradise.",
     "small_description": "A taste of Hawaiian paradise.",
-    "image": "/src/assets/images/hawaiianSpecial.png"
+    "image": "/public/images/hawaiianSpecial.png"
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "alt_text": "Refreshing Mojito",
     "description": "Indulge in the crisp and invigorating experience of our \"Virgin Mojito\" – a non-alcoholic twist on the classic mojito that promises to refresh and uplift. Immerse yourself in the zesty combination of fresh lime, mint leaves, and a touch of cane sugar, creating a symphony of flavors that dance on your taste buds. Each sip is a celebration of citrusy goodness and the cool, minty breeze of a perfect Mojito. Enjoy the guilt-free pleasure of this timeless mocktail, where the spirit of the Mojito comes alive without the spirits!",
     "small_description": "A guilt-free delight with the classic Mojito flavor",
-    "image": "/src/assets/images/virginMojito.png"
+    "image": "/public/images/virginMojito.png"
   }
 ]
