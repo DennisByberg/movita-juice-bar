@@ -49,7 +49,7 @@ function JuiceList() {
           />
           <DefaultButton
             navigationURL={`${juice.link_name}`}
-            buttonText='Read More'
+            buttonText={`Read More About ${juice.name}`}
             variant='outlined'
           />
         </ListItem>

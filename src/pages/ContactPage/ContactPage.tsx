@@ -11,6 +11,7 @@ function ContactPage() {
           width: '100%',
           maxWidth: '600px',
           paddingInline: '1rem',
+          borderRadius: 3,
         }}
         component='img'
         src={googleMapsPNG}

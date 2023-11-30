@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 interface DefaultButtonProps {
   variant: 'text' | 'contained' | 'outlined';
@@ -24,11 +25,13 @@ function DefaultButton({
         marginLeft: `${marginLeft}`,
         color: 'movitaPurple.light',
         borderColor: 'movitaPurple.dark',
+        gap: '0.3rem',
       }}
       onClick={() => navigate(`${navigationURL}`)}
       variant={variant}
     >
       {buttonText}
+      <KeyboardDoubleArrowRightIcon sx={{ fontSize: '1.6rem' }} />
     </Button>
   );
 }

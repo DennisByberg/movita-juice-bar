@@ -54,7 +54,14 @@ export default function DrawerAppBar() {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Avatar role='img' src={movitaLogo} sx={{ margin: '1rem auto' }} />
+      <Avatar
+        role='img'
+        src={movitaLogo}
+        sx={{
+          margin: '1rem auto',
+          cursor: 'pointer',
+        }}
+      />
       <Divider />
       <List>
         {links.map((item) => (
@@ -99,7 +106,14 @@ export default function DrawerAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Avatar role='img' src={movitaLogo} onClick={() => navigate('/')} />
+          <Avatar
+            role='img'
+            sx={{
+              cursor: 'pointer',
+            }}
+            src={movitaLogo}
+            onClick={() => navigate('/')}
+          />
           <Box
             sx={{
               display: { xs: 'none', sm: 'block' },

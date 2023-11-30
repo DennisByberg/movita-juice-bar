@@ -1,5 +1,9 @@
 import { Box, List, ListItem, SxProps, Typography } from '@mui/material';
 import DefaultButton from '../../components/DefaultButton/DefaultButton';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 function AboutPage() {
   const listItemSX: SxProps = {
@@ -20,8 +24,14 @@ function AboutPage() {
 
   const typographyh2SX: SxProps = {
     color: 'movitaPurple.light',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+
     '@media (max-width: 500px)': {
       fontSize: '2rem',
+      flexDirection: 'column-reverse',
+      gap: '0',
     },
   };
 
@@ -41,6 +51,7 @@ function AboutPage() {
         <ListItem sx={listItemSX}>
           <Typography sx={typographyh2SX} variant='h2'>
             Welcome
+            <WavingHandIcon sx={{ fontSize: '2.5rem', color: 'white' }} />
           </Typography>
           <Typography variant='body1'>
             Welcome to The Juice – where the vibrant energy of Gothenburg meets
@@ -53,6 +64,7 @@ function AboutPage() {
         <ListItem sx={listItemSX}>
           <Typography sx={typographyh2SX} variant='h2'>
             Our team
+            <Diversity1Icon sx={{ fontSize: '2.5rem', color: 'white' }} />
           </Typography>
           <Typography variant='body1'>
             Our team of juice artisans, also known as the Sip Squad, handpick
@@ -64,6 +76,7 @@ function AboutPage() {
         <ListItem sx={listItemSX}>
           <Typography sx={typographyh2SX} variant='h2'>
             We are for everyone
+            <FamilyRestroomIcon sx={{ fontSize: '2.5rem', color: 'white' }} />
           </Typography>
           <Typography variant='body1'>
             Whether you re a seasoned juice enthusiast or a newbie to the world
@@ -74,6 +87,9 @@ function AboutPage() {
         <ListItem sx={listItemSX}>
           <Typography sx={typographyh2SX} variant='h2'>
             Join us
+            <VolunteerActivismIcon
+              sx={{ fontSize: '2.5rem', color: 'white' }}
+            />
           </Typography>
           <Typography variant='body1'>
             Join us at The Juice, where every sip is a step into a world of

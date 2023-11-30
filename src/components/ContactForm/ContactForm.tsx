@@ -7,6 +7,7 @@ import './ContactForm.scss';
 import contactSchema from './contactSchema';
 import useBeforeUnloadHook from './hooks/useBeforeUnloadHook';
 import { zodResolver } from '@hookform/resolvers/zod';
+import EmailIcon from '@mui/icons-material/Email';
 
 interface IFormData {
   firstName: string;
@@ -120,6 +121,8 @@ function ContactForm() {
 
       <Button
         sx={{
+          display: 'flex',
+          gap: '0.3rem',
           width: '10rem',
           color: 'movitaPurple.light',
           borderColor: 'movitaPurple.dark',
@@ -131,7 +134,8 @@ function ContactForm() {
         type='submit'
         variant='outlined'
       >
-        {isSubmitting ? 'SUBMITTING' : 'SUBMIT'}
+        {isSubmitting ? 'SUBMITTING MAIL' : 'SUBMIT MAIL'}
+        <EmailIcon sx={{ fontSize: '1rem' }} />
       </Button>
       <Toaster position='top-center' />
     </form>
