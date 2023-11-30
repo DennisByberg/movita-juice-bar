@@ -38,7 +38,7 @@ function App() {
         </Routes>
       </Router>
       <Typography variant='body1' sx={typographySX}>
-        v1.0.2
+        v1.0.3
       </Typography>
     </Container>
   );
