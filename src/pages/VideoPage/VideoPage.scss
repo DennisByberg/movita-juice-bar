@@ -1,0 +1,12 @@
+.video-page {
+  display: flex;
+  margin: 1rem;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid black;
+    box-shadow: 5px 5px 10px black;
+    margin: auto;
+    margin-top: 3rem;
+  }
+}

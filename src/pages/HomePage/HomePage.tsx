@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import juicePNG from '../../assets/images/juicePNG.png';
+import juicePNG from '../../../public/images/juicePNG.png';
 
 function HomePage() {
   return (
@@ -23,8 +23,12 @@ function HomePage() {
           },
         }}
       >
-        <Typography variant='h1'>Movita</Typography>
-        <Typography variant='h2'>- Juice Bar -</Typography>
+        <Typography sx={{ color: 'movitaPurple.light' }} variant='h1'>
+          Movita
+        </Typography>
+        <Typography sx={{ color: 'movitaGreen.light' }} variant='h2'>
+          - Juice Bar -
+        </Typography>
         <Box
           sx={{
             width: '100%',

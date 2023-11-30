@@ -11,6 +11,15 @@ const theme = createTheme({
       active: 'white',
       notActive: grey[400],
     },
+    movitaGreen: {
+      default: '#76BE40',
+      light: '#A0FF71',
+    },
+    movitaPurple: {
+      default: '#8E2F93',
+      light: '#deb3ff',
+      dark: '#4b1475',
+    },
   } as PaletteOptions,
 
   typography: {
