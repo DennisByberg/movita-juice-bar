@@ -1,28 +1,16 @@
+import { Container } from '@mui/material';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.scss';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage/HomePage';
-import JuicesPage from './pages/JuicesPage/JuicesPage';
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
+import Navbar from './components/Navar/Navbar';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
-import VideoPage from './pages/VideoPage/VideoPage';
+import HomePage from './pages/HomePage/HomePage';
 import JuiceDetailPage from './pages/JuiceDetailPage/JuiceDetailPage';
-import { Container, Typography } from '@mui/material';
-import Navbar from './components/Navar/Navbar';
-import { grey } from '@mui/material/colors';
-import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
+import JuicesPage from './pages/JuicesPage/JuicesPage';
+import VideoPage from './pages/VideoPage/VideoPage';
 
 function App() {
-  const typographySX = {
-    position: 'absolute',
-    fontSize: '13px',
-    bottom: '0.2rem',
-    fontStyle: 'italic',
-    left: '0.4rem',
-    letterSpacing: '2px',
-    color: grey[700],
-    userSelect: 'none',
-  };
-
   return (
     <Container sx={{ minHeight: '100vh' }}>
       <Router>
@@ -37,9 +25,6 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </Router>
-      <Typography variant='body1' sx={typographySX}>
-        v1.0.3
-      </Typography>
     </Container>
   );
 }

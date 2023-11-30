@@ -16,7 +16,6 @@ function AboutPage() {
     display: 'flex',
     gap: '3rem',
     flexDirection: 'column',
-    mt: '2rem',
   };
 
   const typographyh2SX: SxProps = {
@@ -30,6 +29,7 @@ function AboutPage() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
+    mb: 6,
     '@media (max-width: 500px)': {
       alignItems: 'center',
     },

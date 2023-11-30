@@ -36,7 +36,7 @@ function JuiceList() {
   };
 
   return (
-    <List>
+    <List sx={{ mb: 4 }}>
       {juices.map((juice) => (
         <ListItem key={juice.id} sx={listItemSX}>
           <ListItemAvatar>

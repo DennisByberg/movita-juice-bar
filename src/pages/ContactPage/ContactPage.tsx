@@ -1,9 +1,20 @@
 import { Box } from '@mui/material';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import googleMapsPNG from '/images/googleMapsPNG.png';
+// import juicePNG from '/images/juicePNG.png';
 
 function ContactPage() {
   return (
-    <Box>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box
+        sx={{
+          width: '100%',
+          maxWidth: '600px',
+          paddingInline: '1rem',
+        }}
+        component='img'
+        src={googleMapsPNG}
+      />
       <ContactForm />
     </Box>
   );

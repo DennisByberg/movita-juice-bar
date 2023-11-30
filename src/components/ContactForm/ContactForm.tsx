@@ -51,8 +51,11 @@ function ContactForm() {
       onSubmit={handleSubmit(submitData)}
     >
       <TextField
-        placeholder='Enter your firstname here'
+        sx={{ maxWidth: 570 }}
+        variant='standard'
+        label='Firstname *'
         {...register('firstName')}
+        placeholder='Enter your firstname here'
         error={!!errors.firstName}
         helperText={
           <Box>
@@ -62,6 +65,9 @@ function ContactForm() {
       />
 
       <TextField
+        sx={{ maxWidth: 570 }}
+        variant='standard'
+        label='Lastname *'
         placeholder='Enter your lastname here'
         {...register('lastName')}
         error={!!errors.lastName}
@@ -73,6 +79,9 @@ function ContactForm() {
       />
 
       <TextField
+        sx={{ maxWidth: 570 }}
+        variant='standard'
+        label='Email *'
         placeholder='Enter your email here'
         type='email'
         {...register('email')}
@@ -85,7 +94,10 @@ function ContactForm() {
       />
 
       <TextField
+        sx={{ maxWidth: 570 }}
+        variant='standard'
         placeholder='Enter your age here'
+        label='Age *'
         type='number'
         {...register('age', { valueAsNumber: true })}
         error={!!errors.age}
@@ -97,7 +109,10 @@ function ContactForm() {
       />
 
       <TextField
+        sx={{ maxWidth: 570 }}
+        variant='standard'
         placeholder='Enter your message here'
+        label='Message'
         {...register('message')}
         multiline
         rows={5}
